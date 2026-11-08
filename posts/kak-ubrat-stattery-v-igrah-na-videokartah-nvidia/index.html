@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru" class="full-height">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Как убрать статтеры в играх на видеокартах Nvidia | Полезные программы, советы и лайфхаки для современных устройств</title>
+<meta name="google-site-verification" content="pA9tQewcSiG1Tu8Z9wnHL5bBjkQHwPViHk94wT8H5zk" />
+<meta name="yandex-verification" content="cb2e8d959dd935cd" />
+<meta property="og:locale" content="ru_RU" />
+<meta name="description" content="Рассмотрим пару способов как можно убрать статтеры(рывки) при использовании компьютера в играх" />
+<meta property="og:description" content="Рассмотрим пару способов как можно убрать статтеры(рывки) при использовании компьютера в играх" />
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+<meta property="og:url" content="http://seblog.ru/posts/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/" />
+<meta property="og:site_name" content="Полезные программы, советы и лайфхаки для современных устройств" />
+
+<meta property="og:image" content="http://seblog.ru/img/imagehome.jpg" />
+
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Как убрать статтеры в играх на видеокартах Nvidia" />
+<meta property="twitter:description" content="Рассмотрим пару способов как можно убрать статтеры(рывки) при использовании компьютера в играх" />
+
+<meta property="twitter:image" content="http://seblog.ru/img/imagehome.jpg" />
+
+
+
+<link rel="stylesheet" href="/css/styles.min.css">
+  </head>
+  <body class="page__body full-height">
+    <div class="wrapper">
+      <header class="site-header">
+  <div class="site-header__container container">
+    
+      <a href="/" class="site-header__logo logo">
+        <img class="logo__image" src="/img/logo.svg" width="98" height="35" alt="Логотип сайта Seblog">
+      </a>
+    
+    <nav class="site-header__site-navigation site-navigation">
+      <ul class="site-navigation__list" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/smartphones/">Смартфоны</a>
+          </li>
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/computers/">Компьютеры</a>
+          </li>
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/downloads/">Загрузки</a>
+          </li>
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/services/">Сервисы</a>
+          </li>
+        
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <button class="site-header__search-button search-button" type="button" aria-label="Открыть окно поиска">
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.32693 3.32704C6.55027 0.103722 11.7764 0.103708 14.9998 3.32704C17.9837 6.31105 18.2027 11.0091 15.6619 14.2479L18.7976 17.3837C19.1879 17.7742 19.1881 18.4073 18.7976 18.7977C18.4072 19.188 17.7741 19.1879 17.3836 18.7977L14.2478 15.662C11.009 18.2024 6.31078 17.9836 3.32693 14.9999C0.103671 11.7766 0.103832 6.5504 3.32693 3.32704ZM13.5857 4.7411C11.1434 2.29882 7.18328 2.29883 4.74099 4.7411C2.29907 7.18328 2.29917 11.1426 4.74099 13.5849C7.18328 16.0271 11.1434 16.0271 13.5857 13.5849C16.0277 11.1426 16.0278 7.18331 13.5857 4.7411Z"></path>
+        </svg>
+      </button>
+      <button class="site-header__burger-button burger-button" type="button" aria-label="Открыть меню">
+        <span class="burger-button__line"></span>
+      </button>
+    </div>
+    <div class="search-window">
+      <div class="search-window__container container">
+        <div class="search-window__body">
+          <div class="search-window__top">
+            <p class="search-window__title">Поиск по сайту</p>
+            <button class="search-window__close-button" type="button" aria-label="Закрыть окно поиска">Закрыть</button>
+          </div>
+          <div class="search-window__content">
+            <form class="search-window__form" action="#" method="post">
+              <label class="visually-hidden" for="search-input">Введите текст</label>
+              <input class="search-window__input" type="text" name="search-input" id="search-input" placeholder="Поиск">
+              <button class="search-window__clear-button" type="reset" aria-label="Закрыть окно поиска">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M15.4044 3.26958C15.7949 2.87905 16.4289 2.87905 16.8194 3.26958C17.2095 3.66008 17.2097 4.29323 16.8194 4.68364L11.4454 10.0567L16.8282 15.4385C17.2186 15.8289 17.2184 16.462 16.8282 16.8526C16.4377 17.2431 15.8047 17.2431 15.4142 16.8526L10.0314 11.4698L4.64952 16.8526C4.259 17.2431 3.62598 17.2431 3.23546 16.8526C2.84505 16.4621 2.84498 15.829 3.23546 15.4385L8.61729 10.0557L3.24425 4.68364C2.85398 4.29315 2.85395 3.66005 3.24425 3.26958C3.6347 2.87912 4.26777 2.87926 4.65831 3.26958L10.0314 8.64165L15.4044 3.26958Z"></path>
+                </svg>
+              </button>
+            </form>
+            <ul class="search-window__results"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+      <main itemscope itemtype="http://schema.org/Article" class="page__main main">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs__list">
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link" href="/">
+                  <span itemprop="name">Главная</span></a>
+                <meta itemprop="position" content="1"/>
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link" href="/computers/">
+                  <span itemprop="name">Компьютеры</span></a>
+                <meta itemprop="position" content="2"/>
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link breadcrumbs__link--current">
+                  <span itemprop="name">Как убрать статтеры в играх на видеокартах Nvidia</span></a>
+                <meta itemprop="position" content="3"/>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <article itemprop="articleBody" class="full-post">
+          <div class="container">
+            <header class="full-post__header">
+              <h1 itemprop="headline" class="full-post__title">Как убрать статтеры в играх на видеокартах Nvidia</h1>
+              <time itemprop="datePublished" class="full-post__date" datetime="2024-12-04">4 дек 2024</time>
+            </header>
+            
+              <div class="full-post__table-of-contents table-of-contents">
+                <header class="table-of-contents__header">
+                  <h2 class="table-of-contents__title">Содержание:</h2>
+                  <button class="table-of-contents__button" type="button" aria-label="Открыть содержание"></button>
+                </header>
+
+                <nav class="table-of-contents__navigation">
+                  <nav class="toc" >
+        <ol><li><a href="#pervyy-sposob-ochistka-kesha">Первый способ: очистка кэша</a></li><li><a href="#kak-vklyuchit-otobrazhenie-skrytyh-faylov-i-papok">Как включить отображение скрытых файлов и папок</a></li><li><a href="#vtoroy-sposob-vklyuchenie-fayla-podkachki">Второй способ: включение файла подкачки</a></li></ol>
+      </nav>
+                </nav>
+              </div>
+            
+            <div class="raw-content">
+              <p>Со временем в играх могут появляться некоторые подергивания или рывки(статтеры), которые мешают насладиться прохождением любимой игры, причин которых может быть множество как проблемы в ПО так и неисправности комплектующих ПК. В данной статье мы рассмотрим пару вариантов которые могут помочь исправить появление рывков в играх на примере видеокарт от NVIDIA.</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/1.jpg" alt="Отображение статтера в игре на примере приложения MSI Afterburner">
+<div class="full-post__see-also see-also">
+  <p class="see-also__text">Смотрите также:</p>
+  <a class="see-also__link" href="/posts/kak-vyvesti-schetchik-fps-v-igrah/">Как вывести счетчик фпс в играх</a>
+</div>
+<h2 id="pervyy-sposob-ochistka-kesha">Первый способ: очистка кэша</h2>
+<p>Для начала зайдем в &laquo;Панель управления NVIDIA&raquo;, нажмем правой кнопкой мыши по пустому месту на рабочем столе, если у вас Windows 11, то нужно дополнительно нажать &laquo;Показать дополнительные параметры&raquo; чтобы увидеть этот пункт:</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/2.jpg" alt="Как открыть Панель управления NVIDIA">
+<p>В открывшемся окне в левой колонке найдите &laquo;Параметры 3D&raquo; и выберите &laquo;Управление параметрами 3D&raquo; в правой колонке отобразятся параметры, нам нужно во вкладку &laquo;Глобальные параметры&raquo;, далее нужно прокрутить вниз и найти &laquo;Размер кэша шейдеров&raquo; и установить &laquo;Отключено&raquo; затем применяем настройки, закрываем окно и перезагружаем компьютер.</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/3.jpg" alt="Как убрать статтеры в играх на видеокартах Nvidia - 1">
+<p>После перезагрузки нужно открыть &laquo;Проводник&raquo; нажав &laquo;Клавиша Windows + латинскую букву E&raquo; и перейти по этому пути: диск на котором установлена система (обычно диск &laquo;C&raquo;) - &laquo;Пользователи&raquo; - &laquo;Здесь выберите нужную папку с именем пользователя&raquo; -  &laquo;AppData&raquo; - &laquo;Local&raquo; - &laquo;NVIDIA&raquo; - &laquo;GLCache&raquo;.</p>
+<h2 id="kak-vklyuchit-otobrazhenie-skrytyh-faylov-i-papok">Как включить отображение скрытых файлов и папок</h2>
+<p>Если у вас не отображается папка &laquo;AppData&raquo;, то необходимо включить отображение скрытых файлов и папок. Для этого нужно в &laquo;Проводнике&raquo; нажать на кнопку с тремя точками:</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/4.jpg" alt="Как включить отображение скрытых файлов и папок в Windows - 1">
+<p>В появившемся окне выбрать &laquo;Параметры&raquo;</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/5.jpg" alt="Как включить отображение скрытых файлов и папок в Windows - 2">
+<p>Нажимаем на вкладку &laquo;Вид&raquo;, в дополнительных параметрах прокручиваем вниз и выбираем пункт &laquo;Показывать скрытые файлы, папки и диски&raquo;, нажимаем &laquo;Применить&raquo; и &laquo;ОК&raquo;, теперь у вас будут отображаться скрытые файлы и папки включаю нужную нам &laquo;AppData&raquo;. По этой инструкции вы также сможете отключить показ скрытых файлов.</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/6.jpg" alt="Как включить отображение скрытых файлов и папок в Windows - 3">
+<p>Теперь нам нужно удалить все что находится внутри папки &laquo;GLCache&raquo;. Не закрывая &laquo;Проводник&raquo; переходим в обратно в директорию &laquo;AppData&raquo; кликая в проводнике</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/7.jpg" alt="Как убрать статтеры в играх на видеокартах Nvidia - 2">
+<p>Теперь нужно перейти в &laquo;LocalLow&raquo; - &laquo;NVIDIA&raquo; - &laquo;PerDriverVersion&raquo; - &laquo;DXCache&raquo; и удалить все содержимое в этой папке. Чтобы быстро все выделить и удалить нажмите сочетание клавиш &laquo;Ctrl + A&raquo; и нажмите клавишу &laquo;Delete&raquo; и закрываем окно.</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/8.jpg" alt="Как убрать статтеры в играх на видеокартах Nvidia - 3">
+<p>Далее удаляем кэш &laquo;DirectX&raquo;. Для этого нам нужно системное приложение &laquo;Очистка диска&raquo;. Открываем меню &laquo;Пуск&raquo; вводим в строке поиска &laquo;очистка диска&raquo; и открываем приложение</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/9.jpg" alt="Приложение очистка диска в Windows - 1">
+<p>В окне выбираем диск C и жмем &laquo;OK&raquo;</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/10.jpg" alt="Приложение очистка диска в Windows - 2">
+<p>Ставим галочку на пункте &laquo;Кэш построителя текстуры DirectX&raquo;, а со всех остальных снимаем</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/11.jpg" alt="Приложение очистка диска в Windows - 3">
+<p>Жмем &laquo;OK&raquo; и соглашаемся с удалением</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/12.jpg" alt="Приложение очистка диска в Windows - 4">
+<p>Теперь снова заходим в &laquo;Панель управления NVIDIA&raquo; - &laquo;Управление параметрами 3D&raquo; - &laquo;Размер кэша шейдеров&raquo; и выбрать пункт &laquo;По умолчанию для драйвера" и применяем.</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/13.jpg" alt="Панель управления NVIDIA">
+<p>Перезагружаем компьютер, и проверяем в игре стало ли лучше.</p>
+<h2 id="vtoroy-sposob-vklyuchenie-fayla-podkachki">Второй способ: включение файла подкачки</h2>
+<p>Еще один способ это включить файл подкачки в системе, проверьте включен ли он у вас. Нажимаем правой кнопкой мыши по кнопке &laquo;Пуск&raquo;, затем нажимаем на &laquo;Система&raquo;.</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/14.jpg" alt="Как включить файл подкачки в Windows 11 - 1">
+<p>В появившемся окне выбираем &laquo;Дополнительные параметры системы&raquo;</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/15.jpg" alt="Как включить файл подкачки в Windows 11 - 2">
+<p>Откроются параметры, далее во вкладке &laquo;Дополнительно&raquo; есть раздел &laquo;Быстродействие&raquo; в котором находится кнопка &laquo;Параметры&raquo; нажимаем ее.</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/16.jpg" alt="Как включить файл подкачки в Windows 11 - 3">
+<p>Откроется еще одно окно в котором нам нужно выбрать вкладку &laquo;Дополнительно&raquo;, в разделе &laquo;Виртуальная память&raquo; нажимаем кнопку &laquo;Изменить&raquo;</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/17.jpg" alt="Как включить файл подкачки в Windows 11 - 4">
+<p>Появляется список дисков в системе и у каждого будет указан размер файла подкачки</p>
+<blockquote>Внимание! При создании файла подкачки будет динамически изменяться размер занимаемого места в указанном диске, но также одновременно будет улучшена общая производительность компьютера</blockquote>
+<p>Если вдруг у вас не установлен файл подкачки не на одном диске, то нужно будет выбрать любой диск, если выбранный диск будет формата SSD будет еще лучше, далее выбираем пункт &laquo;По выбору системы&raquo;, затем нажимаем кнопку &laquo;Задать&raquo; и &laquo;OK&raquo;.</p>
+<img src="/images/2024/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/18.jpg" alt="Как включить файл подкачки в Windows 11 - 5">
+<p>После этого система может попросить перезагрузить ПК, чтобы включить файл подкачки, перезагружаем. После проверяем как ведут себя игры.</p>
+              
+            </div>
+            
+              <div class="notice">
+  <p class="notice__text">Все материалы на сайте опубликованы исключительно в ознакомительных целях. Любые действия с вашим устройством вы выполняете на свой страх и риск. Администрация сайта не несет ответственности за возможные последствия.</p>
+</div>
+            
+            <div class="full-post__share share">
+  <ul class="share__list">
+    <li class="share__item">
+      <a class="share__link share__link--tw" href="https://twitter.com/intent/tweet?text=Как убрать статтеры в играх на видеокартах Nvidia&url=http://seblog.ru/posts/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/&utm_source=share2" title="Поделиться в X"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--mm" href="https://connect.mail.ru/share?url=http://seblog.ru/posts/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/&title=Как убрать статтеры в играх на видеокартах Nvidia&utm_source=share2" title="Поделиться в Мой мир"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--ok" href="https://connect.ok.ru/offer?url=http://seblog.ru/posts/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/&title=Как убрать статтеры в играх на видеокартах Nvidia&utm_source=share2" title="Поделиться в Одноклассники"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--tg" href="https://t.me/share/url?url=http://seblog.ru/posts/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/&text=Как убрать статтеры в играх на видеокартах Nvidia&utm_source=share2" title="Поделиться в Телеграм"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--vk" href="https://vk.com/share.php?url=http://seblog.ru/posts/kak-ubrat-stattery-v-igrah-na-videokartah-nvidia/&title=Как убрать статтеры в играх на видеокартах Nvidia&utm_source=share2" title="Поделиться в Вконтакте"></a>
+    </li>
+  </ul>
+</div>
+          </div>
+        </article>
+        
+
+<div class="page__prev-next prev-next">
+  <div class="prev-next__container container">
+  
+  <div class="prev-next__prev">
+    <h2 class="prev-next__title">
+      <a class="prev-next__link" href="/posts/kak-vyvesti-schetchik-fps-v-igrah/">Как вывести счетчик фпс в играх</a>
+    </h2>
+  </div>
+  
+  
+  <div class="prev-next__next">
+    <h2 class="prev-next__title">
+      <a class="prev-next__link" href="/posts/skachat-prevyu-s-video-youtube/">Скачать превью с видео ютуб</a>
+    </h2>
+  </div>
+  
+  </div>
+</div>
+
+      </main>
+      <footer class="site-footer">
+  <div class="site-footer__row container">
+    &copy;<span class="site-footer__year"></span>&ensp;Все права защищены. Копирование материалов запрещено.
+  </div>
+  <div class="site-footer__row container">
+    <a class="site-footer__link" href="/about/">О сайте</a>
+  </div>
+</footer>
+
+      <span class="overlay"></span>
+    </div>
+    
+    <script src="/js/script.min.js" defer></script>
+  </body>
+</html>
