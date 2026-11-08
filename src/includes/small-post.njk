@@ -1,0 +1,14 @@
+<div class="all-posts__item">
+  <article class="small-article" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="small-article__text-content">
+      <h2 class="small-article__title" itemprop="headline">
+        <a itemprop="url" class="small-article__link" href="{{ post.url }}"><span>{{ post.data.title }}</span></a>
+      </h2>
+      <div class="small-article__meta">
+        <time itemprop="datePublished" class="small-article__date" datetime="{{ post.date | mapDate }}">{{ post.date | ruDate }}</time>
+        <a class="small-article__category" href="/{{ post.data.category }}/">{{ post.data.categoryText }}</a>
+      </div>
+      <p itemprop="description" class="small-article__description">{{ post.content | striptags(true) | truncateWords(20) }}</p>
+    </div>
+  </article>
+</div>

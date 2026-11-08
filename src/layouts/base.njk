@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru" class="full-height">
+<head>
+  {% include "head-main.njk" %}
+</head>
+<body class="page__body full-height">
+  <div class="wrapper">
+    {% include "header.njk" %}
+    <main class="page__main main" itemscope itemtype="http://schema.org/Blog">
+    <h1 class="visually-hidden" itemprop="description">Seblog - гайды, сервисы, загрузки</h1>
+    <section class="all-posts">
+      <div class="container">
+        <div class="all-posts__list">
+          {{ content | safe }}
+        </div>
+      </div>
+    </section>
+    {% include "pagination.njk" %}
+    </main>
+    {% include "footer.njk" %}
+    <span class="overlay"></span>
+  </div>
+  <script src="/js/script.min.js" defer></script>
+</body>
+</html>

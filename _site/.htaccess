@@ -1,0 +1,92 @@
+AddDefaultCharset UTF-8
+Options -Indexes
+
+RewriteEngine On
+
+# RewriteCond %{HTTP:HTTPS} !=on [NC]
+# RewriteRule ^(.*)$ https://seblog.ru/$1 [R=301,L]
+# SetEnvIf X-Forwarded-Proto https HTTPS=on
+
+
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} www.seblog.ru [NC]
+RewriteRule (.*) http://seblog.ru/$1 [R=301,L]
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ http://seblog.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP_USER_AGENT} wget [NC]
+RewriteRule .* - [F]
+
+ErrorDocument 404 /404.html
+
+<ifModule mod_expires.c>
+
+# Add correct content-type for fonts
+AddType application/vnd.ms-fontobject .eot
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/x-font-woff .woff
+AddType image/svg+xml .svg
+
+# Compress compressible fonts
+AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype image/svg+xml
+
+ExpiresActive On
+ExpiresDefault "access plus 5 seconds"
+
+# Cache Images
+ExpiresByType image/x-icon "access plus 2592000 seconds"
+ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/png "access plus 2592000 seconds"
+ExpiresByType image/gif "access plus 2592000 seconds"
+ExpiresByType image/svg+xml "access plus 2592000 seconds"
+
+# Cache Fonts
+ExpiresByType application/vnd.ms-fontobject "access plus 2592000 seconds"
+ExpiresByType application/x-font-ttf "access plus 2592000 seconds"
+ExpiresByType application/x-font-opentype "access plus 2592000 seconds"
+ExpiresByType application/x-font-woff "access plus 2592000 seconds"
+ExpiresByType image/svg+xml "access plus 2592000 seconds"
+
+# Cache other content types (Flash, CSS, JS, HTML, XML)
+ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+ExpiresByType text/css "access plus 604800 seconds"
+ExpiresByType text/javascript "access plus 2592000 seconds"
+ExpiresByType application/javascript "access plus 2592000 seconds"
+ExpiresByType application/x-javascript "access plus 2592000 seconds"
+ExpiresByType text/html "access plus 600 seconds"
+ExpiresByType application/xhtml+xml "access plus 600 seconds"
+
+</ifModule>
+
+<ifModule mod_deflate.c>
+
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+
+</ifModule>
+
+# Redirect 301 /старая-страница.html http://www.example.com/новая-страница.html
+   
+Redirect 301 /articles/computers/2023/2023-03-27-kak-ustanovit-na-panel-zadach-indikator-skorosti-interneta-v-windows-11/ /posts/kak-ustanovit-na-panel-zadach-indikator-skorosti-interneta-v-windows-11/
+
+Redirect 301 /articles/downloads/2023/2023-04-15-polosatye-oboi-v-priyatnyh-pastelnyh-tonah/ /posts/polosatye-oboi-v-priyatnyh-pastelnyh-tonah/
+
+Redirect 301 /articles/downloads/2023/2023-04-20-setchatye-oboi-so-svetyaschimisya-elementami/ /posts/setchatye-oboi-so-svetyaschimisya-elementami/
+
+Redirect 301 /articles/downloads/2023/2023-04-24-abstraktnye-oboi-s-geometricheskim-uzorom/ /posts/abstraktnye-oboi-s-geometricheskim-uzorom/
+
+Redirect 301 /articles/downloads/2023/2023-05-01-stilnye-oboi-s-kartoy-mira/ /posts/stilnye-oboi-s-kartoy-mira/
+
+Redirect 301 /articles/downloads/2023/2023-05-05-temnye-abstraktnye-oboi-s-lineynoy-figuroy/ /posts/temnye-abstraktnye-oboi-s-lineynoy-figuroy/
+
+Redirect 301 /articles/downloads/2023/2023-05-09-abstraktnye-oboi-s-izognutymi-poloskami-v-krasivoy-palitre/ /posts/abstraktnye-oboi-s-izognutymi-poloskami-v-krasivoy-palitre/
+
+Redirect 301 /articles/downloads/2023/2023-05-14-abstraktnye-oboi-so-smeshannymi-tsvetnymi-volnami/ /posts/abstraktnye-oboi-so-smeshannymi-tsvetnymi-volnami/
+
+Redirect 301 /articles/services/2023/2023-10-01-proverka-myshi-na-dvoynoy-klik-onlayn/ /posts/proverka-myshi-na-dvoynoy-klik-onlayn/
+
+Redirect 301 /articles/services/2023/2023-10-02-servis-transliteratsii-url-onlayn/ /posts/servis-transliteratsii-url-onlayn/
+
+Redirect 301 /articles/smartphones/2023/2023-10-21-kak-postavit-melodiyu-na-zvonok-v-android/ /posts/kak-postavit-melodiyu-na-zvonok-v-android/
+
+Redirect 301 /articles/smartphones/2024/2024-01-07-kak-izmenit-razmer-shrifta-v-android/ /posts/kak-izmenit-razmer-shrifta-v-android/

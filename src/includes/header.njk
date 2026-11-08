@@ -1,0 +1,54 @@
+<header class="site-header">
+  <div class="site-header__container container">
+    {% if page | isHomePage %}
+      <a class="site-header__logo logo">
+        <img class="logo__image" src="/img/logo.svg" width="98" height="35" alt="Логотип сайта Seblog">
+      </a>
+    {% else %}
+      <a href="/" class="site-header__logo logo">
+        <img class="logo__image" src="/img/logo.svg" width="98" height="35" alt="Логотип сайта Seblog">
+      </a>
+    {% endif %}
+    <nav class="site-header__site-navigation site-navigation">
+      <ul class="site-navigation__list" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        {% for category in collections.category %}
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="{{ category.data.tag }}">{{ category.data.cat }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <button class="site-header__search-button search-button" type="button" aria-label="Открыть окно поиска">
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.32693 3.32704C6.55027 0.103722 11.7764 0.103708 14.9998 3.32704C17.9837 6.31105 18.2027 11.0091 15.6619 14.2479L18.7976 17.3837C19.1879 17.7742 19.1881 18.4073 18.7976 18.7977C18.4072 19.188 17.7741 19.1879 17.3836 18.7977L14.2478 15.662C11.009 18.2024 6.31078 17.9836 3.32693 14.9999C0.103671 11.7766 0.103832 6.5504 3.32693 3.32704ZM13.5857 4.7411C11.1434 2.29882 7.18328 2.29883 4.74099 4.7411C2.29907 7.18328 2.29917 11.1426 4.74099 13.5849C7.18328 16.0271 11.1434 16.0271 13.5857 13.5849C16.0277 11.1426 16.0278 7.18331 13.5857 4.7411Z"></path>
+        </svg>
+      </button>
+      <button class="site-header__burger-button burger-button" type="button" aria-label="Открыть меню">
+        <span class="burger-button__line"></span>
+      </button>
+    </div>
+    <div class="search-window">
+      <div class="search-window__container container">
+        <div class="search-window__body">
+          <div class="search-window__top">
+            <p class="search-window__title">Поиск по сайту</p>
+            <button class="search-window__close-button" type="button" aria-label="Закрыть окно поиска">Закрыть</button>
+          </div>
+          <div class="search-window__content">
+            <form class="search-window__form" action="#" method="post">
+              <label class="visually-hidden" for="search-input">Введите текст</label>
+              <input class="search-window__input" type="text" name="search-input" id="search-input" placeholder="Поиск">
+              <button class="search-window__clear-button" type="reset" aria-label="Закрыть окно поиска">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M15.4044 3.26958C15.7949 2.87905 16.4289 2.87905 16.8194 3.26958C17.2095 3.66008 17.2097 4.29323 16.8194 4.68364L11.4454 10.0567L16.8282 15.4385C17.2186 15.8289 17.2184 16.462 16.8282 16.8526C16.4377 17.2431 15.8047 17.2431 15.4142 16.8526L10.0314 11.4698L4.64952 16.8526C4.259 17.2431 3.62598 17.2431 3.23546 16.8526C2.84505 16.4621 2.84498 15.829 3.23546 15.4385L8.61729 10.0557L3.24425 4.68364C2.85398 4.29315 2.85395 3.66005 3.24425 3.26958C3.6347 2.87912 4.26777 2.87926 4.65831 3.26958L10.0314 8.64165L15.4044 3.26958Z"></path>
+                </svg>
+              </button>
+            </form>
+            <ul class="search-window__results"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

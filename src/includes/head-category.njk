@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% if pagination.pageNumber > 0 %}
+<title>{{ title }} - Страница {{ pagination.pageNumber + 1 }}</title>
+{% else %}
+<title>{{ title }}</title>
+{% endif %}
+{% include "search-data.njk" %}
+{% if page.url != tag %}
+<link rel="canonical" href="{{ siteUrl }}{{ tag }}" />
+{% endif %}
+{% if pagination.href.previous %}
+<link rel="prev" href="{{ siteUrl }}{{ pagination.href.previous }}">
+{% endif %}
+{% if pagination.href.next %}
+<link rel="next" href="{{ siteUrl }}{{ pagination.href.next }}">
+{% endif %}
+<meta property="og:locale" content="ru_RU" />
+<meta name="description" content="{{ description }}" />
+<meta property="og:description" content="{{ description }}" />
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+<meta property="og:url" content="{{ siteUrl }}/" />
+<meta property="og:site_name" content="Seblog" />
+<meta property="og:image" content="{{ siteUrl }}/img/imagehome.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="{{ title }}" />
+<meta property="twitter:description" content="{{ description }}" />
+<meta property="twitter:image" content="{{ siteUrl }}/img/imagehome.jpg" />
+<link rel="stylesheet" href="/css/styles.min.css">

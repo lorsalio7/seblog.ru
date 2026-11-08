@@ -1,0 +1,23 @@
+<div class="page__pagination pagination">
+  <div class="pagination__container container">
+  {% if pagination.href.previous %}
+    <a class="pagination__previous-link" href="{{ pagination.href.previous }}" title="Предыдущая страница">
+      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.15971 1.05022C6.55023 1.44074 6.55023 2.07391 6.15971 2.46443L2.62417 5.99996L6.15971 9.5355C6.55023 9.92602 6.55023 10.5592 6.15971 10.9497C5.76918 11.3402 5.13602 11.3402 4.74549 10.9497L0.502854 6.70707C0.11233 6.31655 0.11233 5.68338 0.502854 5.29286L4.74549 1.05022C5.13602 0.659693 5.76918 0.659693 6.15971 1.05022Z"></path>
+      </svg>
+      <span>пред</span>
+    </a>
+    {% else %}
+  {% endif %}
+  
+  {% if pagination.href.next %}
+  <a class="pagination__next-link" href="{{ pagination.href.next }}" title="Следующая страница">
+    <span>след</span>
+    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.84078 1.05022C0.450256 1.44074 0.450256 2.07391 0.84078 2.46443L4.37631 5.99996L0.84078 9.5355C0.450256 9.92602 0.450256 10.5592 0.84078 10.9497C1.2313 11.3402 1.86447 11.3402 2.25499 10.9497L6.49763 6.70707C6.88816 6.31655 6.88816 5.68338 6.49763 5.29286L2.25499 1.05022C1.86447 0.659693 1.2313 0.659693 0.84078 1.05022Z"></path>
+    </svg>
+  </a>
+  {% else %}
+  {% endif %}
+  </div>
+</div>

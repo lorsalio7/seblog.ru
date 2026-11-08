@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru" class="full-height">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Как поставить мелодию на звонок в андроид | Полезные программы, советы и лайфхаки для современных устройств</title>
+<meta name="google-site-verification" content="pA9tQewcSiG1Tu8Z9wnHL5bBjkQHwPViHk94wT8H5zk" />
+<meta name="yandex-verification" content="cb2e8d959dd935cd" />
+<meta property="og:locale" content="ru_RU" />
+<meta name="description" content="В данной статье мы рассмотрим различные способы смены мелодии рингтона, а также установку на контакты, в разных версиях андроид" />
+<meta property="og:description" content="В данной статье мы рассмотрим различные способы смены мелодии рингтона, а также установку на контакты, в разных версиях андроид" />
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+<meta property="og:url" content="http://seblog.ru/posts/kak-postavit-melodiyu-na-zvonok-v-android/" />
+<meta property="og:site_name" content="Полезные программы, советы и лайфхаки для современных устройств" />
+
+<meta property="og:image" content="http://seblog.ru/img/imagehome.jpg" />
+
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Как поставить мелодию на звонок в андроид" />
+<meta property="twitter:description" content="В данной статье мы рассмотрим различные способы смены мелодии рингтона, а также установку на контакты, в разных версиях андроид" />
+
+<meta property="twitter:image" content="http://seblog.ru/img/imagehome.jpg" />
+
+
+
+<link rel="stylesheet" href="/css/styles.min.css">
+  </head>
+  <body class="page__body full-height">
+    <div class="wrapper">
+      <header class="site-header">
+  <div class="site-header__container container">
+    
+      <a href="/" class="site-header__logo logo">
+        <img class="logo__image" src="/img/logo.svg" width="98" height="35" alt="Логотип сайта Seblog">
+      </a>
+    
+    <nav class="site-header__site-navigation site-navigation">
+      <ul class="site-navigation__list" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/smartphones/">Смартфоны</a>
+          </li>
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/computers/">Компьютеры</a>
+          </li>
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/downloads/">Загрузки</a>
+          </li>
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/services/">Сервисы</a>
+          </li>
+        
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <button class="site-header__search-button search-button" type="button" aria-label="Открыть окно поиска">
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.32693 3.32704C6.55027 0.103722 11.7764 0.103708 14.9998 3.32704C17.9837 6.31105 18.2027 11.0091 15.6619 14.2479L18.7976 17.3837C19.1879 17.7742 19.1881 18.4073 18.7976 18.7977C18.4072 19.188 17.7741 19.1879 17.3836 18.7977L14.2478 15.662C11.009 18.2024 6.31078 17.9836 3.32693 14.9999C0.103671 11.7766 0.103832 6.5504 3.32693 3.32704ZM13.5857 4.7411C11.1434 2.29882 7.18328 2.29883 4.74099 4.7411C2.29907 7.18328 2.29917 11.1426 4.74099 13.5849C7.18328 16.0271 11.1434 16.0271 13.5857 13.5849C16.0277 11.1426 16.0278 7.18331 13.5857 4.7411Z"></path>
+        </svg>
+      </button>
+      <button class="site-header__burger-button burger-button" type="button" aria-label="Открыть меню">
+        <span class="burger-button__line"></span>
+      </button>
+    </div>
+    <div class="search-window">
+      <div class="search-window__container container">
+        <div class="search-window__body">
+          <div class="search-window__top">
+            <p class="search-window__title">Поиск по сайту</p>
+            <button class="search-window__close-button" type="button" aria-label="Закрыть окно поиска">Закрыть</button>
+          </div>
+          <div class="search-window__content">
+            <form class="search-window__form" action="#" method="post">
+              <label class="visually-hidden" for="search-input">Введите текст</label>
+              <input class="search-window__input" type="text" name="search-input" id="search-input" placeholder="Поиск">
+              <button class="search-window__clear-button" type="reset" aria-label="Закрыть окно поиска">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M15.4044 3.26958C15.7949 2.87905 16.4289 2.87905 16.8194 3.26958C17.2095 3.66008 17.2097 4.29323 16.8194 4.68364L11.4454 10.0567L16.8282 15.4385C17.2186 15.8289 17.2184 16.462 16.8282 16.8526C16.4377 17.2431 15.8047 17.2431 15.4142 16.8526L10.0314 11.4698L4.64952 16.8526C4.259 17.2431 3.62598 17.2431 3.23546 16.8526C2.84505 16.4621 2.84498 15.829 3.23546 15.4385L8.61729 10.0557L3.24425 4.68364C2.85398 4.29315 2.85395 3.66005 3.24425 3.26958C3.6347 2.87912 4.26777 2.87926 4.65831 3.26958L10.0314 8.64165L15.4044 3.26958Z"></path>
+                </svg>
+              </button>
+            </form>
+            <ul class="search-window__results"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+      <main itemscope itemtype="http://schema.org/Article" class="page__main main">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs__list">
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link" href="/">
+                  <span itemprop="name">Главная</span></a>
+                <meta itemprop="position" content="1"/>
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link" href="/smartphones/">
+                  <span itemprop="name">Смартфоны</span></a>
+                <meta itemprop="position" content="2"/>
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link breadcrumbs__link--current">
+                  <span itemprop="name">Как поставить мелодию на звонок в андроид</span></a>
+                <meta itemprop="position" content="3"/>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <article itemprop="articleBody" class="full-post">
+          <div class="container">
+            <header class="full-post__header">
+              <h1 itemprop="headline" class="full-post__title">Как поставить мелодию на звонок в андроид</h1>
+              <time itemprop="datePublished" class="full-post__date" datetime="2023-10-21">21 окт 2023</time>
+            </header>
+            
+              <div class="full-post__table-of-contents table-of-contents">
+                <header class="table-of-contents__header">
+                  <h2 class="table-of-contents__title">Содержание:</h2>
+                  <button class="table-of-contents__button" type="button" aria-label="Открыть содержание"></button>
+                </header>
+
+                <nav class="table-of-contents__navigation">
+                  <nav class="toc" >
+        <ol><li><a href="#kak-pomenyat-melodiyu-na-sovremennyh-ustroystvah">Как поменять мелодию на современных устройствах</a></li><li><a href="#kak-pomenyat-standartnuyu-melodiyu-na-svoyu">Как поменять стандартную мелодию на свою</a></li><li><a href="#kak-zadat-melodiyu-na-otdelnyy-kontakt">Как задать мелодию на отдельный контакт</a></li><li><a href="#kak-pomenyat-rington-na-ustroystvah-samsung-galaxy">Как поменять рингтон на устройствах Samsung Galaxy</a></li><li><a href="#kak-ustanovit-svoy-rington-na-ustroystvah-samsung-galaxy">Как установить свой рингтон на устройствах Samsung Galaxy</a></li><li><a href="#kak-ustanovit-melodiyu-na-kontakt-v-ustroystvah-samsung-galaxy">Как установить мелодию на контакт в устройствах Samsung Galaxy</a></li><li><a href="#kak-dobavit-svoyu-melodiyu-na-staryh-ustroystvah">Как добавить свою мелодию на старых устройствах</a></li></ol>
+      </nav>
+                </nav>
+              </div>
+            
+            <div class="raw-content">
+              <p>Изменение мелодии звонка позволит вам выделится из толпы, удачно подобранный рингтон с приятным звучанием поможет добавить немного разнообразия в повседневную жизнь, а также сможет помочь не пропустить важный звонок на контакт которого была установлена особая мелодия. В данной статье вы узнаете как поменять стандартную мелодию в вашем смартфоне из списка установленных, на свою, а также применить ее на отдельный контакт из записной книжки телефона.</p>
+<h2 id="kak-pomenyat-melodiyu-na-sovremennyh-ustroystvah">Как поменять мелодию на современных устройствах</h2>
+<p>Заходим в настройки устройства, выбираем пункт &laquo;Звук&raquo;</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/1.jpg" alt="Как поменять мелодию на современных устройствах - 1">
+<p>Выбираем пункт &laquo;Рингтон&raquo;, и видим список различных групп(в&nbsp;зависимости от&nbsp;производителя) с&nbsp;рингтонами:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/2.jpg" alt="Как поменять мелодию на современных устройствах - 2">
+<p>Выбираем любой понравившийся рингтон(при выборе звуковой сигнал начинает проигрываться) и жмем &laquo;Сохранить&raquo;.</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/3.jpg" alt="Как поменять мелодию на современных устройствах - 3">
+<h2 id="kak-pomenyat-standartnuyu-melodiyu-na-svoyu">Как поменять стандартную мелодию на свою</h2>
+<p>Переходим в &laquo;Настройки&raquo; далее &laquo;Звук&raquo; и выбираем раздел &laquo;Рингтон&raquo;, нас интересует раздел &laquo;Мои сигналы&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/4.jpg" alt="Как поменять стандартную мелодию на свою в современных устройствах - 1">
+<p>Заходим туда и видим в нижнем правом углу экрана будет кнопка с &laquo;+&raquo;, нажимаем ее:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/5.jpg" alt="Как поменять стандартную мелодию на свою в современных устройствах - 2">
+<p>Откроется приложение &laquo;Загрузки&raquo;, будет показаны последние загрузки(вы должны скачать отдельно рингтоны), выбираем нашу скачанную мелодию:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/6.jpg" alt="Как поменять стандартную мелодию на свою в современных устройствах - 3">
+<p>И видим наша мелодия отобразилась в списке &laquo;Мои сигналы&raquo;, выбираем ее и сохраняем.</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/7.jpg" alt="Как поменять стандартную мелодию на свою в современных устройствах - 4">
+<h2 id="kak-zadat-melodiyu-na-otdelnyy-kontakt">Как задать мелодию на отдельный контакт</h2>
+<p>Для того чтобы задать особый рингтон на контакт, нужно открыть приложение &laquo;Контакты&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/8.jpg" alt="Как задать мелодию на отдельный контакт в современных устройствах - 1">
+<p>Выбираем нужный контакт из списка:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/9.jpg" alt="Как задать мелодию на отдельный контакт в современных устройствах - 2">
+<p>Далее ищем кнопку с тремя точками и нажимаем ее:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/10.jpg" alt="Как задать мелодию на отдельный контакт в современных устройствах - 3">
+<p>Появится меню в котором нужно выбрать &laquo;Задать рингтон&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/11.jpg" alt="Как задать мелодию на отдельный контакт в современных устройствах - 4">
+<p>Открывается меню со всеми установленными рингтонами, в котором выберите любой рингтон и нажмите &laquo;Сохранить&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/12.jpg" alt="Как задать мелодию на отдельный контакт в современных устройствах - 5">
+<h2 id="kak-pomenyat-rington-na-ustroystvah-samsung-galaxy">Как поменять рингтон на устройствах Samsung Galaxy</h2>
+<p>Для того чтобы поменять звуковой сигнал на устройствах Самсунг нужно зайти в &laquo;Настройки&raquo;, далее выбрать пункт &laquo;Звук и&nbsp;вибрация&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/13.jpg" alt="Как поменять рингтон на устройствах Samsung Galaxy - 1">
+<p>Затем выбираем раздел &laquo;Мелодия звонка&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/14.jpg" alt="Как поменять рингтон на устройствах Samsung Galaxy - 2">
+<p>Сразу открывается список всех установленных рингтонов, прослушиваем и выбираем понравившийся:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/15.jpg" alt="Как поменять рингтон на устройствах Samsung Galaxy - 3">
+<h2 id="kak-ustanovit-svoy-rington-na-ustroystvah-samsung-galaxy">Как установить свой рингтон на устройствах Samsung Galaxy</h2>
+<p>После того как вы скачали рингтон или хотите установить из уже имеющейся библиотеки нужный звуковой сигнал, необходимо зайти в &laquo;Настройки&raquo;&nbsp;&mdash; &laquo;Звук и&nbsp;вибрация&raquo;&nbsp;&mdash; &laquo;Мелодия звонка&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/16.jpg" alt="Как установить свой рингтон на устройствах Samsung Galaxy - 1">
+<p>В открывшемся списке мелодий будет кнопка с &laquo;+&raquo;, нажимаем ее и открывается список всех мелодий в вашем устройстве, выбираем нужный рингтон и нажимаем &laquo;Готово&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/17.jpg"  alt="Как установить свой рингтон на устройствах Samsung Galaxy - 2">
+<p>И видим как установился наш звонок:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/18.jpg" alt="Как установить свой рингтон на устройствах Samsung Galaxy - 3">
+<h2 id="kak-ustanovit-melodiyu-na-kontakt-v-ustroystvah-samsung-galaxy">Как установить мелодию на контакт в устройствах Samsung Galaxy</h2>
+<p>Для того чтобы установить другую мелодию на контакт в устройствах Samsung, необходимо открыть приложение &laquo;Контакты&raquo;, выбрать контакт на который собираемся поставить другой рингтон:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/19.jpg" alt="Как установить мелодию на контакт в устройствах Samsung Galaxy - 1">
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/20.jpg" alt="Как установить мелодию на контакт в устройствах Samsung Galaxy - 2">
+<p>После того как выбрали и нажали на нужный контакт нужно нажать на кнопку с иконкой карандаша и подписью &laquo;Изменить&raquo;, нажимаем на вкладку развернуть:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/21.jpg" alt="Как установить мелодию на контакт в устройствах Samsung Galaxy - 3">
+<p>Прокручиваем весь список вниз, нам нужен пункт &laquo;Мелодия звонка&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/22.jpg" alt="Как установить мелодию на контакт в устройствах Samsung Galaxy - 4">
+<p>Далее возможно выскочит окошко(если у вас установлены подходящие приложения) с выбором приложения с помощью которого можно выбрать мелодию, в моем примере я выберу стандартное приложение &laquo;SecSoundPicker&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/23.jpg" alt="Как установить мелодию на контакт в устройствах Samsung Galaxy - 5">
+<p>Откроется список всех установленных рингтонов, и выбираем любой который вам понравится:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/24.jpg" alt="Как установить мелодию на контакт в устройствах Samsung Galaxy - 6">
+<p>Далее нужно сохранить контакт с добавленной мелодией</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/25.jpg" alt="Как установить мелодию на контакт в устройствах Samsung Galaxy - 7">
+<p>Теперь на отдельном контакте будет особая мелодия, так можно поступить и с другими контактами:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/26.jpg" alt="Как установить мелодию на контакт в устройствах Samsung Galaxy - 8">
+<h2 id="kak-dobavit-svoyu-melodiyu-na-staryh-ustroystvah">Как добавить свою мелодию на старых устройствах</h2>
+<p>Если вы пользователь более ранней версии андроид, то возможно у вас так просто нельзя поставить свою мелодию. Для начала нам потребуется файловый менеджер(приложение для просмотра всех файлов и папок на устройстве), большинство производителей предустанавливают в свои смартфоны уже данное приложение, но если вдруг у вас такого нет, то рекомендую скачать с Play Store приложение Google Files:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/27.jpg" alt="Как добавить свою мелодию на старых устройствах - 1">
+<p>После установки файлового менеджера запускаем его даем разрешение на использование файловой системы:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/28.jpg" alt="Как добавить свою мелодию на старых устройствах - 2">
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/29.jpg" alt="Как добавить свою мелодию на старых устройствах - 3">
+<p>Допустим вы уже скачали рингтон с Интернета, в разделе &laquo;Скачанные файлы&raquo; будет лежать файл рингтона, перейдем в эту категорию:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/30.jpg" alt="Как добавить свою мелодию на старых устройствах - 4">
+<p>Видим скачанный рингтон, справа будет кнопка с тремя точками и нажмем ее:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/31.jpg" alt="Как добавить свою мелодию на старых устройствах - 5">
+<p>Откроется меню, выбираем или &laquo;Копировать в&raquo; или &laquo;Переместить в&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/32.jpg" alt="Как добавить свою мелодию на старых устройствах - 6">
+<p>Далее всплывает окошко куда мы хотим перенести наш рингтон, выберем &laquo;Внутренняя память&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/33.jpg" alt="Как добавить свою мелодию на старых устройствах - 7">
+<p>Почти в каждом андроиде есть в корне внутренней памяти есть три папки: &laquo;Alarms&raquo;(Сигналы), &laquo;Notifications&raquo;(Уведомления) и&nbsp;&laquo;Ringtones&raquo;(Рингтоны). Для того чтобы мы видели в списке установленных мелодий нашу, нужно переместить нашу скачанную мелодию в папку &laquo;Ringtones&raquo;(Рингтоны):</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/34.jpg" alt="Как добавить свою мелодию на старых устройствах - 8">
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/35.jpg" alt="Как добавить свою мелодию на старых устройствах - 9">
+<p>Теперь заходим в настройки устройства&nbsp;&mdash; &laquo;Звук&raquo;&nbsp;&mdash; &laquo;Рингтон&raquo; и видим в списке только что добавленный наш рингтон:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/36.jpg" alt="Как добавить свою мелодию на старых устройствах - 10">
+<p>Но что делать если в вашем устройстве нет этих папок(&laquo;Alarms&raquo;, &laquo;Notifications&raquo; и&nbsp;&laquo;Ringtones&raquo;). Для этого нам понадобится тот же файловый менеджер. Запускаем &laquo;Google Files&raquo;, вкладка &laquo;Просмотр&raquo; прокручиваем вниз раздел &laquo;Хранилища&raquo;, если у вас установлена флешка, то можно проделать следующие манипуляции и в ней:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/37.jpg" alt="Как добавить свою мелодию на старых устройствах - 11">
+<p>Открываем нужное хранилище, в нижнем правом углу есть кнопка с &laquo;+&raquo; нажимаем на&nbsp;нее и&nbsp;создаем новую папку &laquo;Media&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/38.jpg" alt="Как добавить свою мелодию на старых устройствах - 12">
+<p>Внутри этой папки создадим еще одну папку &laquo;Audio&raquo;, переходим в&nbsp;нее и&nbsp;создадим внутри еще три папки &laquo;Alarms&raquo;, &laquo;Notifications&raquo; и&nbsp;&laquo;Ringtones&raquo;:</p>
+<img src="/images/2023/kak-postavit-melodiyu-na-zvonok-v-android/39.jpg" alt="Как добавить свою мелодию на старых устройствах - 13">
+<p>Теперь чтобы система увидела наш рингтон, нужно перенести его в папку &laquo;Ringtones&raquo;(Рингтоны). О том как изменить звонок телефона, поставить на контакт рассказано в статье выше.</p>
+              
+            </div>
+            
+              <div class="notice">
+  <p class="notice__text">Все материалы на сайте опубликованы исключительно в ознакомительных целях. Любые действия с вашим устройством вы выполняете на свой страх и риск. Администрация сайта не несет ответственности за возможные последствия.</p>
+</div>
+            
+            <div class="full-post__share share">
+  <ul class="share__list">
+    <li class="share__item">
+      <a class="share__link share__link--tw" href="https://twitter.com/intent/tweet?text=Как поставить мелодию на звонок в андроид&url=http://seblog.ru/posts/kak-postavit-melodiyu-na-zvonok-v-android/&utm_source=share2" title="Поделиться в X"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--mm" href="https://connect.mail.ru/share?url=http://seblog.ru/posts/kak-postavit-melodiyu-na-zvonok-v-android/&title=Как поставить мелодию на звонок в андроид&utm_source=share2" title="Поделиться в Мой мир"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--ok" href="https://connect.ok.ru/offer?url=http://seblog.ru/posts/kak-postavit-melodiyu-na-zvonok-v-android/&title=Как поставить мелодию на звонок в андроид&utm_source=share2" title="Поделиться в Одноклассники"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--tg" href="https://t.me/share/url?url=http://seblog.ru/posts/kak-postavit-melodiyu-na-zvonok-v-android/&text=Как поставить мелодию на звонок в андроид&utm_source=share2" title="Поделиться в Телеграм"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--vk" href="https://vk.com/share.php?url=http://seblog.ru/posts/kak-postavit-melodiyu-na-zvonok-v-android/&title=Как поставить мелодию на звонок в андроид&utm_source=share2" title="Поделиться в Вконтакте"></a>
+    </li>
+  </ul>
+</div>
+          </div>
+        </article>
+        
+
+<div class="page__prev-next prev-next">
+  <div class="prev-next__container container">
+  
+  <div class="prev-next__prev">
+    <h2 class="prev-next__title">
+      <a class="prev-next__link" href="/posts/kak-izmenit-razmer-shrifta-v-android/">Как изменить размер шрифта в андроид</a>
+    </h2>
+  </div>
+  
+  
+  <div class="prev-next__next">
+    <h2 class="prev-next__title">
+      <a class="prev-next__link" href="/posts/servis-transliteratsii-url-onlayn/">Сервис транслитерации url онлайн</a>
+    </h2>
+  </div>
+  
+  </div>
+</div>
+
+      </main>
+      <footer class="site-footer">
+  <div class="site-footer__row container">
+    &copy;<span class="site-footer__year"></span>&ensp;Все права защищены. Копирование материалов запрещено.
+  </div>
+  <div class="site-footer__row container">
+    <a class="site-footer__link" href="/about/">О сайте</a>
+  </div>
+</footer>
+
+      <span class="overlay"></span>
+    </div>
+    
+    <script src="/js/script.min.js" defer></script>
+  </body>
+</html>

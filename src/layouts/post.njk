@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru" class="full-height">
+  <head>
+    {% include "head-post.njk" %}
+  </head>
+  <body class="page__body full-height">
+    <div class="wrapper">
+      {% include "header.njk" %}
+      <main itemscope itemtype="http://schema.org/Article" class="page__main main">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs__list">
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link" href="/">
+                  <span itemprop="name">Главная</span></a>
+                <meta itemprop="position" content="1"/>
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link" href="/{{ category }}/">
+                  <span itemprop="name">{{ categoryText }}</span></a>
+                <meta itemprop="position" content="2"/>
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link breadcrumbs__link--current">
+                  <span itemprop="name">{{ title }}</span></a>
+                <meta itemprop="position" content="3"/>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <article itemprop="articleBody" class="full-post">
+          <div class="container">
+            <header class="full-post__header">
+              <h1 itemprop="headline" class="full-post__title">{{ title }}</h1>
+              <time itemprop="datePublished" class="full-post__date" datetime="{{ page.date | mapDate }}">{{ page.date | ruDate }}</time>
+            </header>
+            {% if content | toc %}
+              <div class="full-post__table-of-contents table-of-contents">
+                <header class="table-of-contents__header">
+                  <h2 class="table-of-contents__title">Содержание:</h2>
+                  <button class="table-of-contents__button" type="button" aria-label="Открыть содержание"></button>
+                </header>
+
+                <nav class="table-of-contents__navigation">
+                  {{ content | toc | safe }}
+                </nav>
+              </div>
+            {% endif %}
+            <div class="raw-content">
+              {{ content | safe }}
+              {% if dropdown %}
+                <div class="full-post__dropdown dropdown">
+                  <button class="dropdown__button" type="button" aria-label="Открыть список">Выберите размер<img class="button__icon" src="/img/dropdown-ic.svg" aria-hidden="true" width="15" height="9"></button>
+                  <div class="dropdown__content">
+                    <div class="dropdown__section">
+                      <div class="dropdown__orientation">
+                        <img src="/img/landscape-ic.svg" width="40" height="40" aria-hidden="true">
+                        <span>альбомные</span>
+                      </div>
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" rel="nofollow noreferrer noopener" href="{{ dropdown_links.landscape_3840x2160.url }}">
+                        3840x2160
+                        <span class="dropdown__size">({{ dropdown_links.landscape_3840x2160.size }})</span>
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" rel="nofollow noreferrer noopener" href="{{ dropdown_links.landscape_2560x1440.url }}">
+                        2560x1440
+                        <span class="dropdown__size">({{ dropdown_links.landscape_2560x1440.size }})</span>
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" rel="nofollow noreferrer noopener" href="{{ dropdown_links.landscape_1920x1080.url }}">
+                        1920x1080
+                        <span class="dropdown__size">({{ dropdown_links.landscape_1920x1080.size }})</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__section">
+                      <div class="dropdown__orientation">
+                        <img src="/img/portrait-ic.svg" width="40" height="40" aria-hidden="true">
+                        <span>портретные</span>
+                      </div>
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" rel="nofollow noreferrer noopener" href="{{ dropdown_links.portrait_1440x3088.url }}">
+                        3088x1440
+                        <span class="dropdown__size">({{ dropdown_links.portrait_1440x3088.size }})</span>
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" rel="nofollow noreferrer noopener" href="{{ dropdown_links.portrait_1080x2400.url }}">
+                        2400x1080
+                        <span class="dropdown__size">({{ dropdown_links.portrait_1080x2400.size }})</span>
+                          </a>
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" rel="nofollow noreferrer noopener" href="{{ dropdown_links.portrait_720x1650.url }}">
+                        1650x720
+                        <span class="dropdown__size">({{ dropdown_links.portrait_720x1650.size }})</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+            {% if category != "downloads" and category != "services" %}
+              {% include "notice.njk" %}
+            {% endif %}
+            {% include "share.njk" %}
+          </div>
+        </article>
+        {% include "prev-next.njk" %}
+      </main>
+      {% include "footer.njk" %}
+      <span class="overlay"></span>
+    </div>
+    {% if custom_scripts %}
+      <script src="{{ custom_scripts }}" defer></script>
+    {% endif %}
+    <script src="/js/script.min.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru" class="full-height">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Как отключить автозагрузку программ в Windows | Полезные программы, советы и лайфхаки для современных устройств</title>
+<meta name="google-site-verification" content="pA9tQewcSiG1Tu8Z9wnHL5bBjkQHwPViHk94wT8H5zk" />
+<meta name="yandex-verification" content="cb2e8d959dd935cd" />
+<meta property="og:locale" content="ru_RU" />
+<meta name="description" content="В этой статье вы узнаете как можно ускорить запуск операционных систем Windows 11 и 10 при помощи отключения автозагрузки приложений" />
+<meta property="og:description" content="В этой статье вы узнаете как можно ускорить запуск операционных систем Windows 11 и 10 при помощи отключения автозагрузки приложений" />
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+<meta property="og:url" content="http://seblog.ru/posts/kak-otklyuchit-avtozagruzku-programm-v-windows/" />
+<meta property="og:site_name" content="Полезные программы, советы и лайфхаки для современных устройств" />
+
+<meta property="og:image" content="http://seblog.ru/img/imagehome.jpg" />
+
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Как отключить автозагрузку программ в Windows" />
+<meta property="twitter:description" content="В этой статье вы узнаете как можно ускорить запуск операционных систем Windows 11 и 10 при помощи отключения автозагрузки приложений" />
+
+<meta property="twitter:image" content="http://seblog.ru/img/imagehome.jpg" />
+
+
+
+<link rel="stylesheet" href="/css/styles.min.css">
+  </head>
+  <body class="page__body full-height">
+    <div class="wrapper">
+      <header class="site-header">
+  <div class="site-header__container container">
+    
+      <a href="/" class="site-header__logo logo">
+        <img class="logo__image" src="/img/logo.svg" width="98" height="35" alt="Логотип сайта Seblog">
+      </a>
+    
+    <nav class="site-header__site-navigation site-navigation">
+      <ul class="site-navigation__list" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/smartphones/">Смартфоны</a>
+          </li>
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/computers/">Компьютеры</a>
+          </li>
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/downloads/">Загрузки</a>
+          </li>
+        
+          <li class="site-navigation__item">
+            <a itemprop="url" class="site-navigation__link" href="/services/">Сервисы</a>
+          </li>
+        
+      </ul>
+    </nav>
+    <div class="site-header__actions">
+      <button class="site-header__search-button search-button" type="button" aria-label="Открыть окно поиска">
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.32693 3.32704C6.55027 0.103722 11.7764 0.103708 14.9998 3.32704C17.9837 6.31105 18.2027 11.0091 15.6619 14.2479L18.7976 17.3837C19.1879 17.7742 19.1881 18.4073 18.7976 18.7977C18.4072 19.188 17.7741 19.1879 17.3836 18.7977L14.2478 15.662C11.009 18.2024 6.31078 17.9836 3.32693 14.9999C0.103671 11.7766 0.103832 6.5504 3.32693 3.32704ZM13.5857 4.7411C11.1434 2.29882 7.18328 2.29883 4.74099 4.7411C2.29907 7.18328 2.29917 11.1426 4.74099 13.5849C7.18328 16.0271 11.1434 16.0271 13.5857 13.5849C16.0277 11.1426 16.0278 7.18331 13.5857 4.7411Z"></path>
+        </svg>
+      </button>
+      <button class="site-header__burger-button burger-button" type="button" aria-label="Открыть меню">
+        <span class="burger-button__line"></span>
+      </button>
+    </div>
+    <div class="search-window">
+      <div class="search-window__container container">
+        <div class="search-window__body">
+          <div class="search-window__top">
+            <p class="search-window__title">Поиск по сайту</p>
+            <button class="search-window__close-button" type="button" aria-label="Закрыть окно поиска">Закрыть</button>
+          </div>
+          <div class="search-window__content">
+            <form class="search-window__form" action="#" method="post">
+              <label class="visually-hidden" for="search-input">Введите текст</label>
+              <input class="search-window__input" type="text" name="search-input" id="search-input" placeholder="Поиск">
+              <button class="search-window__clear-button" type="reset" aria-label="Закрыть окно поиска">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M15.4044 3.26958C15.7949 2.87905 16.4289 2.87905 16.8194 3.26958C17.2095 3.66008 17.2097 4.29323 16.8194 4.68364L11.4454 10.0567L16.8282 15.4385C17.2186 15.8289 17.2184 16.462 16.8282 16.8526C16.4377 17.2431 15.8047 17.2431 15.4142 16.8526L10.0314 11.4698L4.64952 16.8526C4.259 17.2431 3.62598 17.2431 3.23546 16.8526C2.84505 16.4621 2.84498 15.829 3.23546 15.4385L8.61729 10.0557L3.24425 4.68364C2.85398 4.29315 2.85395 3.66005 3.24425 3.26958C3.6347 2.87912 4.26777 2.87926 4.65831 3.26958L10.0314 8.64165L15.4044 3.26958Z"></path>
+                </svg>
+              </button>
+            </form>
+            <ul class="search-window__results"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+      <main itemscope itemtype="http://schema.org/Article" class="page__main main">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs__list">
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link" href="/">
+                  <span itemprop="name">Главная</span></a>
+                <meta itemprop="position" content="1"/>
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link" href="/computers/">
+                  <span itemprop="name">Компьютеры</span></a>
+                <meta itemprop="position" content="2"/>
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                <a itemprop="item" class="breadcrumbs__link breadcrumbs__link--current">
+                  <span itemprop="name">Как отключить автозагрузку программ в Windows</span></a>
+                <meta itemprop="position" content="3"/>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <article itemprop="articleBody" class="full-post">
+          <div class="container">
+            <header class="full-post__header">
+              <h1 itemprop="headline" class="full-post__title">Как отключить автозагрузку программ в Windows</h1>
+              <time itemprop="datePublished" class="full-post__date" datetime="2025-12-24">24 дек 2025</time>
+            </header>
+            
+              <div class="full-post__table-of-contents table-of-contents">
+                <header class="table-of-contents__header">
+                  <h2 class="table-of-contents__title">Содержание:</h2>
+                  <button class="table-of-contents__button" type="button" aria-label="Открыть содержание"></button>
+                </header>
+
+                <nav class="table-of-contents__navigation">
+                  <nav class="toc" >
+        <ol><li><a href="#kak-otklyuchit-avtozagruzku-programm-v-windows-11">Как отключить автозагрузку программ в Windows 11</a></li><li><a href="#kakie-prilozheniya-mozhno-i-kakie-nelzya-otklyuchat">Какие приложения можно и какие нельзя отключать</a></li><li><a href="#kak-otklyuchit-avtozagruzku-programm-v-windows-11-cherez-dispetcher-zadach">Как отключить автозагрузку программ в Windows 11 через диспетчер задач</a></li><li><a href="#kak-otklyuchit-avtozagruzku-programm-v-windows-10">Как отключить автозагрузку программ в Windows 10</a></li><li><a href="#kak-otklyuchit-avtozagruzku-programm-v-windows-10-cherez-dispetcher-zadach">Как отключить автозагрузку программ в Windows 10 через диспетчер задач</a></li></ol>
+      </nav>
+                </nav>
+              </div>
+            
+            <div class="raw-content">
+              <p>Со временем после длительного периода использования компьютера, можно заметить что скорость запуска операционной системы может занимать значительное время, особенно если вы часто устанавливаете различные программы. К счастью существует способ ускорить запуск Windows без ее переустановки - отключение ненужных программ из автозагрузки.</p>
+<h2 id="kak-otklyuchit-avtozagruzku-programm-v-windows-11">Как отключить автозагрузку программ в Windows 11</h2>
+<p>Первый способ через настройки. Нажмите &laquo;Пуск&raquo; - &laquo;Параметры&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/1.jpg" alt="Меню Пуск в Windows 11">
+<p>На следующем экране перейдите в раздел &laquo;Приложения&raquo;, затем в &laquo;Автозагрузка&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/2.jpg" alt="Меню Параметры в Windows 11">
+<p>Здесь вы увидите список всех программ которые запускаются одновременно с операционной системой:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/3.jpg" alt="Список установленых в Windows 11">
+<h2 id="kakie-prilozheniya-mozhno-i-kakie-nelzya-otklyuchat">Какие приложения можно и какие нельзя отключать</h2>
+<p>Теперь по поводу какие приложения можно отключать безопасно - мессенджеры, лаунчеры игр, облачные хранилища (Яндекс Диск, Гугл Диск и т.д., но только если не нужны постоянно).</p>
+<p>Какие не следует отключать - драйверы, антивирус, системные службы Windows, аудио-драйверы (Realtek и т. п.).</p>
+<p>После того как вы определились какие приложения стоит отключить, нажмите на переключатель напротив названия в положение &laquo;Откл.(Отключено)&raquo;.</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/4.jpg" alt="Список приложений автозагрузки в Windows 11">
+<h2 id="kak-otklyuchit-avtozagruzku-programm-v-windows-11-cherez-dispetcher-zadach">Как отключить автозагрузку программ в Windows 11 через диспетчер задач</h2>
+<p>Также можно отключить приложения через &laquo;Диспетчер задач&raquo;, для этого запустим его - нажмите правой кнопкой мыши по кнопке &laquo;Пуск&raquo; или по &laquo;Панели задач&raquo;, в открывшемся меню выберите пункт &laquo;Диспетчер задач&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/5.jpg" alt="Как отключить автозагрузку программ в Windows">
+<p>Затем в левом списке параметров нажмите на &laquo;Автозагрузка приложений&raquo;, откроется список приложений:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/6.jpg" alt="Диспетчер задач в Windows 11">
+<p>И чтобы отключить необходимо нажать правой кнопкой мыши и выбрать пункт &laquo;Отключить&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/7.jpg" alt="Как отключить автозагрузку программ в Windows">
+<p>Всё, в следующий раз отключенные приложения не будут влиять на производительность компьютера во время запуска системы. Самое главное выбрать правильно программы для отключения.</p>
+<h2 id="kak-otklyuchit-avtozagruzku-programm-v-windows-10">Как отключить автозагрузку программ в Windows 10</h2>
+<p>Нажмите &laquo;Пуск&raquo; затем &laquo;Параметры&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/8.jpg" alt="Меню Пуск в Windows 10">
+<p>Затем в раздел &laquo;Приложения&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/9.jpg" alt="Меню Параметры в Windows 10">
+<p>И выберите пункт &laquo;Автозагрузка&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/10.jpg" alt="Список установленных приложений в Windows 10">
+<p>Откроется список приложений которые стартуют вместе с операционной системой о том какие приложения можно отключать безопасно <a href="#kakie-prilozheniya-mozhno-i-kakie-nelzya-otklyuchat">посмотрите здесь:</a></p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/11.jpg" alt="Как отключить автозагрузку программ в Windows">
+<p>Чтобы выключить из автозагрузки нужное приложение нажмите переключатель из &laquo;Вкл(включено)&raquo; в &laquo;Откл(отключено)&raquo;.</p>
+<div class="full-post__see-also see-also">
+  <p class="see-also__text">Смотрите также:</p>
+  <a class="see-also__link" href="/posts/kak-vklyuchit-temnuyu-temu-v-windows/">Как включить темную тему в Windows</a>
+</div>
+<h2 id="kak-otklyuchit-avtozagruzku-programm-v-windows-10-cherez-dispetcher-zadach">Как отключить автозагрузку программ в Windows 10 через диспетчер задач</h2>
+<p>Чтобы вызвать &laquo;Диспетчер задач&raquo; нужно кликнуть правой кнопкой мыши по кнопке &laquo;Пуск&raquo; или по панели задач и выбрать пункт &laquo;Диспетчер задач&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/12.jpg" alt="Как отключить автозагрузку программ в Windows">
+<p>Если у вас показывает пустое окно, то нажмите на кнопку &laquo;Подробнее&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/13.jpg" alt="Как отключить автозагрузку программ в Windows">
+<p>Затем кликните по вкладке &laquo;Автозагрузка&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/14.jpg" alt="Диспетчер задач в Windows 10">
+<p>Откроется список всех приложений которые запускаются вместе с системой, и чтобы отключить нужное кликните правой кнопкой мыши и выберите пункт &laquo;Отключить&raquo;:</p>
+<img src="/images/2025/kak-otklyuchit-avtozagruzku-programm-v-windows/15.jpg" alt="Диспетчер задач в Windows 10">
+<p>Таким способом можно значительно ускорить готовность операционной системы к работе после включения, особенно на слабом компьютерном железе.</p>
+              
+            </div>
+            
+              <div class="notice">
+  <p class="notice__text">Все материалы на сайте опубликованы исключительно в ознакомительных целях. Любые действия с вашим устройством вы выполняете на свой страх и риск. Администрация сайта не несет ответственности за возможные последствия.</p>
+</div>
+            
+            <div class="full-post__share share">
+  <ul class="share__list">
+    <li class="share__item">
+      <a class="share__link share__link--tw" href="https://twitter.com/intent/tweet?text=Как отключить автозагрузку программ в Windows&url=http://seblog.ru/posts/kak-otklyuchit-avtozagruzku-programm-v-windows/&utm_source=share2" title="Поделиться в X"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--mm" href="https://connect.mail.ru/share?url=http://seblog.ru/posts/kak-otklyuchit-avtozagruzku-programm-v-windows/&title=Как отключить автозагрузку программ в Windows&utm_source=share2" title="Поделиться в Мой мир"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--ok" href="https://connect.ok.ru/offer?url=http://seblog.ru/posts/kak-otklyuchit-avtozagruzku-programm-v-windows/&title=Как отключить автозагрузку программ в Windows&utm_source=share2" title="Поделиться в Одноклассники"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--tg" href="https://t.me/share/url?url=http://seblog.ru/posts/kak-otklyuchit-avtozagruzku-programm-v-windows/&text=Как отключить автозагрузку программ в Windows&utm_source=share2" title="Поделиться в Телеграм"></a>
+    </li>
+    <li class="share__item">
+      <a class="share__link share__link--vk" href="https://vk.com/share.php?url=http://seblog.ru/posts/kak-otklyuchit-avtozagruzku-programm-v-windows/&title=Как отключить автозагрузку программ в Windows&utm_source=share2" title="Поделиться в Вконтакте"></a>
+    </li>
+  </ul>
+</div>
+          </div>
+        </article>
+        
+
+<div class="page__prev-next prev-next">
+  <div class="prev-next__container container">
+  
+  
+  <div class="prev-next__next">
+    <h2 class="prev-next__title">
+      <a class="prev-next__link" href="/posts/kak-sdelat-skrinshot-v-windows/">Как сделать скриншот в Windows</a>
+    </h2>
+  </div>
+  
+  </div>
+</div>
+
+      </main>
+      <footer class="site-footer">
+  <div class="site-footer__row container">
+    &copy;<span class="site-footer__year"></span>&ensp;Все права защищены. Копирование материалов запрещено.
+  </div>
+  <div class="site-footer__row container">
+    <a class="site-footer__link" href="/about/">О сайте</a>
+  </div>
+</footer>
+
+      <span class="overlay"></span>
+    </div>
+    
+    <script src="/js/script.min.js" defer></script>
+  </body>
+</html>
